@@ -26,7 +26,7 @@ public class ValidadorRegistroTest {
 
         boolean act = name.isEmpty();
 
-        assertTrue(act);
+        assertTrue(act, "el nombre no está vacío.");
     }
 
     @Test
@@ -36,7 +36,7 @@ public class ValidadorRegistroTest {
 
         boolean act = password.length() == 8;
 
-        assertTrue(act);
+        assertTrue(act, "La contraseña no contiene 8 caracteres.");
     }
 
     @Test
@@ -46,7 +46,7 @@ public class ValidadorRegistroTest {
 
         boolean act = password.length() == 5;
 
-        assertTrue(act);
+        assertTrue(act,"La contraseña no contiene 5 caracteres.");
     }
 
     @Test
@@ -56,7 +56,7 @@ public class ValidadorRegistroTest {
 
         boolean act = email.contains("@");
 
-        assertFalse(act);
+        assertFalse(act,"El email contiene un @.");
     }
 
     @Test
@@ -66,7 +66,7 @@ public class ValidadorRegistroTest {
 
         boolean act = age == 16;
 
-        assertTrue(act);
+        assertTrue(act, "La edad no es igual a 16.");
     }
 
 }
