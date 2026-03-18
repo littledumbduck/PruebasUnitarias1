@@ -1,5 +1,6 @@
-
-![Logo](logo.png)
+<div align="center">
+  <img src="logo.png">
+</div>
 
 
 # -- Proyecto de Pruebas Unitarias --
